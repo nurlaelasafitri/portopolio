@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nurlaela Safitri — Technical Writer, Business Analyst & QA</title>
+<meta name="description" content="Portofolio Nurlaela Safitri: Technical Writer, Business Analyst, dan Quality Assurance. Dokumentasi sistem farmasi dan transportasi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0720;--ink:#F3F0FF;--mut:#B9B3DE;--v:#7C3AED;--p:#FF3D81;--c:#22D3EE;--a:#FFB020;--gl:rgba(255,255,255,.06);--bd:rgba(255,255,255,.15)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.7 Sora,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+.aur{position:fixed;inset:0;z-index:-1;overflow:hidden}
+.aur i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55;animation:drift 18s ease-in-out infinite alternate}
+.aur i:nth-child(1){width:520px;height:520px;background:var(--v);top:-140px;left:-120px}
+.aur i:nth-child(2){width:440px;height:440px;background:var(--p);top:22%;right:-120px;animation-delay:-6s}
+.aur i:nth-child(3){width:480px;height:480px;background:var(--c);bottom:-160px;left:28%;animation-delay:-12s;opacity:.4}
+.aur i:nth-child(4){width:260px;height:260px;background:var(--a);top:58%;left:4%;animation-delay:-3s;opacity:.3}
+@keyframes drift{to{transform:translate(90px,60px) scale(1.2)}}
+.cur{position:fixed;left:-300px;top:-300px;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;pointer-events:none;background:radial-gradient(closest-side,rgba(255,61,129,.2),transparent);z-index:0}
+.bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--c),var(--p),var(--a));z-index:20}
+.gl{background:var(--gl);border:1px solid var(--bd);border-radius:22px;backdrop-filter:blur(12px)}
+.sp{position:relative;overflow:hidden}
+.sp::before{content:"";position:absolute;inset:0;background:radial-gradient(300px circle at var(--mx,50%) var(--my,0),rgba(167,139,250,.3),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.sp:hover::before{opacity:1}.sp>*{position:relative}
+.grad{background:linear-gradient(100deg,#fff,#FF8AB5 30%,#A78BFA 60%,#67E8F9);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s linear infinite alternate}
+@keyframes shine{to{background-position:100% 0}}
+
+.nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:10;display:flex;gap:2px;padding:5px;background:rgba(20,14,50,.65);backdrop-filter:blur(14px);border:1px solid var(--bd);border-radius:999px}
+.nav a{padding:6px 14px;border-radius:999px;font-size:.85rem;font-weight:600;text-decoration:none;color:var(--mut)}
+.nav a:hover{background:var(--gl);color:var(--ink)}
+@media(max-width:560px){.nav a{padding:6px 9px;font-size:.76rem}}
+
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;padding:110px 0 60px}
+h1{font-size:clamp(3.2rem,12vw,8.4rem);line-height:.9;letter-spacing:-.045em;font-weight:800;margin:0 0 26px}
+.type{font-size:clamp(1.2rem,3vw,1.7rem);font-weight:600;margin:0 0 18px;min-height:2.2em}
+.type b{color:var(--c)}
+.caret{display:inline-block;width:3px;height:1.1em;background:var(--p);vertical-align:-.15em;margin-left:3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{max-width:52ch;color:var(--mut);margin:0 0 30px;font-size:1.1rem}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:800;text-decoration:none;border:1px solid var(--bd);background:var(--gl);backdrop-filter:blur(10px);transition:transform .2s,box-shadow .2s}
+.btn.hot{background:linear-gradient(100deg,var(--p),var(--v));border-color:transparent;box-shadow:0 8px 36px -6px var(--p)}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.fl{position:absolute;padding:10px 20px;font-weight:800;font-size:1.3rem;border-radius:16px;animation:flt 6s ease-in-out infinite alternate}
+.fl small{display:block;font-size:.7rem;font-weight:400;color:var(--mut)}
+.fl:nth-of-type(1){right:6%;top:24%}
+.fl:nth-of-type(2){right:20%;top:42%;animation-delay:-2s;color:var(--c)}
+.fl:nth-of-type(3){right:4%;top:58%;animation-delay:-4s;color:var(--a)}
+.fl:nth-of-type(4){right:24%;top:72%;animation-delay:-1s;color:var(--p)}
+@keyframes flt{to{transform:translateY(-26px) rotate(3deg)}}
+@media(max-width:960px){.fl{display:none}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;padding:20px 8px;text-align:center}
+.stats b{display:block;font-size:clamp(1.5rem,4vw,2.6rem);line-height:1.1;font-weight:800}
+.stats span{font-size:.8rem;color:var(--mut)}
+
+.band{overflow:hidden;white-space:nowrap;border-block:1px solid var(--bd);background:rgba(255,255,255,.03);transform:rotate(-1.5deg);margin:20px -20px}
+.band div{display:inline-block;padding:16px 0;font-size:clamp(1.4rem,3vw,2.2rem);font-weight:800;animation:run 30s linear infinite}
+.band span{margin:0 26px;color:transparent;-webkit-text-stroke:1px var(--mut)}
+.band span:nth-child(3n){color:var(--ink);-webkit-text-stroke:0}
+@keyframes run{to{transform:translateX(-50%)}}
+
+section{padding:clamp(60px,9vw,110px) 0;position:relative;z-index:1}
+.kick{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--c);margin-bottom:10px}
+h2{font-size:clamp(2.2rem,6vw,4.2rem);line-height:1;letter-spacing:-.04em;font-weight:800;margin:0 0 14px}
+.sub{color:var(--mut);max-width:56ch;margin:0 0 36px}
+
+.pipe{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.pipe button{font:800 1rem Sora,sans-serif;color:var(--ink);padding:12px 22px;border-radius:999px;border:1px solid var(--bd);background:var(--gl);cursor:pointer;transition:all .2s}
+.pipe button:hover{transform:translateY(-3px);border-color:var(--c)}
+.pipe button[aria-pressed="true"]{background:linear-gradient(100deg,var(--v),var(--p));border-color:transparent;box-shadow:0 8px 30px -6px var(--p)}
+.det{padding:30px 34px}
+.det b{display:block;font-size:clamp(2.6rem,8vw,5rem);line-height:1;font-weight:800;letter-spacing:-.04em}
+.det strong{display:block;font-size:1.25rem;margin:6px 0}
+.det p{margin:0;color:var(--mut);max-width:60ch}
+
+.tl{position:relative;padding-left:40px;display:grid;gap:26px}
+.tl::before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--bd)}
+.tl .fill{position:absolute;left:8px;top:0;width:2px;height:var(--pg,0%);background:linear-gradient(var(--c),var(--p));box-shadow:0 0 14px var(--c)}
+.job{padding:26px 30px}
+.job::after{content:"";position:absolute;left:-40px;top:34px;width:18px;height:18px;border-radius:50%;background:var(--bg);border:4px solid var(--p);box-shadow:0 0 16px var(--p)}
+.job{overflow:visible}.job.sp{overflow:visible}
+.date{display:inline-block;font-size:.8rem;font-weight:600;padding:3px 14px;border-radius:999px;background:linear-gradient(100deg,var(--v),var(--p));margin-bottom:10px}
+.job h3{margin:0;font-size:1.5rem;letter-spacing:-.02em;line-height:1.2}
+.org{color:var(--c);font-weight:600;margin:2px 0 12px}
+.job ul{margin:0;padding-left:1.2em;color:var(--mut)}.job li{margin:6px 0;max-width:72ch}.job li::marker{color:var(--p)}
+summary{cursor:pointer;font-weight:800;margin-top:10px;color:var(--ink)}
+
+.pj{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{padding:24px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s ease-out;will-change:transform}
+.card .n{font-size:3.4rem;font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.28)}
+.card h3{font-size:1.1rem;line-height:1.3;margin:14px 0 4px}
+.card small{color:var(--mut)}
+.chip{display:inline-block;font-size:.72rem;font-weight:800;padding:2px 12px;border-radius:999px;color:#0A0720}
+.k0{background:var(--p)}.k1{background:var(--c)}.k2{background:var(--a)}
+.card .top{display:flex;justify-content:space-between;align-items:center}
+
+.sk{display:grid;gap:26px}
+.sk h3{font-size:1rem;margin:0 0 12px;color:var(--mut);font-weight:600}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pills span{padding:6px 18px;border-radius:999px;border:1px solid var(--bd);background:var(--gl);font-weight:600;transition:transform .2s,border-color .2s,box-shadow .2s}
+.pills span:hover{transform:translateY(-4px) rotate(-2deg);border-color:var(--cl);box-shadow:0 8px 24px -8px var(--cl)}
+.edu{padding:28px 32px;margin-top:40px}
+.edu b{font-size:1.4rem;display:block}
+
+.cta{padding:clamp(36px,7vw,80px);text-align:center;border-radius:32px;background:linear-gradient(135deg,rgba(124,58,237,.45),rgba(255,61,129,.35),rgba(34,211,238,.3))}
+.cta h2{font-size:clamp(2.2rem,7vw,5rem)}
+.cta .btns{justify-content:center}
+footer{text-align:center;color:var(--mut);padding:10px 0 50px;font-size:.88rem}
+
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}.cur{display:none}}
+</style>
+</head>
+<body>
+<div class="aur" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<div class="cur" id="cur" aria-hidden="true"></div>
+<div class="bar" id="bar"></div>
+<nav class="nav" aria-label="Navigasi">
+  <a href="#dokumen">Dokumen</a><a href="#karier">Karier</a><a href="#proyek">Proyek</a><a href="#skill">Skill</a><a href="#kontak">Kontak</a>
+</nav>
+
+<header class="hero"><div class="wrap">
+  <div class="fl gl" aria-hidden="true">URS<small>Requirement</small></div>
+  <div class="fl gl" aria-hidden="true">FSD<small>Specification</small></div>
+  <div class="fl gl" aria-hidden="true">UAT<small>Acceptance</small></div>
+  <div class="fl gl" aria-hidden="true">SOP<small>Procedure</small></div>
+  <p class="type">Halo, saya <b id="tw"></b><span class="caret" aria-hidden="true"></span></p>
+  <h1 class="grad">Nurlaela<br>Safitri</h1>
+  <p class="lead">Mengubah kebutuhan bisnis yang rumit menjadi dokumentasi yang jelas dan sistem yang teruji. 3 tahun 10 bulan di dunia sistem farmasi dan transportasi.</p>
+  <div class="btns">
+    <a class="btn hot" href="mailto:nurlaelasafitri140@gmail.com">Kirim email</a>
+    <a class="btn" href="https://wa.me/6282127394799" target="_blank" rel="noopener">Chat WhatsApp</a>
+  </div>
+  <div class="stats gl">
+    <div><b class="grad">3,10</b><span>tahun pengalaman</span></div>
+    <div><b class="grad num" data-to="10">0</b><span>proyek sistem</span></div>
+    <div><b class="grad num" data-to="10">0</b><span>jenis dokumen</span></div>
+    <div><b class="grad num" data-to="3">0</b><span>peran: TW, BA, QA</span></div>
+  </div>
+</div></header>
+
+<div class="band" aria-hidden="true"><div id="marq"></div></div>
+
+<main class="wrap">
+<section id="dokumen" class="rv">
+  <span class="kick">Dokumen</span>
+  <h2>Yang saya <span class="grad">tulis</span></h2>
+  <p class="sub">Dari rencana validasi sampai panduan pengguna. Klik satu dokumen untuk lihat fungsinya.</p>
+  <div class="pipe" id="pipe"></div>
+  <div class="gl sp det" id="det" aria-live="polite"></div>
+</section>
+
+<section id="karier">
+  <span class="kick">Karier</span>
+  <h2>Perjalanan <span class="grad">kerja</span></h2>
+  <p class="sub">Dari yang terbaru.</p>
+  <div class="tl" id="tl"><div class="fill"></div>
+    <article class="gl sp job rv">
+      <span class="date">Maret 2022 – sekarang</span>
+      <h3>Technical Writer / Quality Assurance</h3>
+      <p class="org">PT Marchesini Group Indonesia ASPAC</p>
+      <ul>
+        <li>Mengembangkan dan memelihara dokumentasi teknis dan fungsional: user manual, technical manual, SOP, dokumentasi API, dan dokumentasi sistem.</li>
+        <li>Menyusun BRD, FSD, use case, process flow, dokumen UAT, dan release notes.</li>
+        <li>Memetakan proses bisnis AS-IS dan TO-BE sebagai dasar dokumentasi sistem.</li>
+        <li>Menjalankan functional testing dan regression testing, lalu mencatat dan memverifikasi bug hingga resolved.</li>
+        <li>Menyusun test result report dan rekomendasi perbaikan.</li>
+      </ul>
+      <details><summary>Lihat selengkapnya</summary>
+        <ul>
+          <li>Menerjemahkan kebutuhan bisnis dan teknis menjadi dokumentasi yang jelas untuk audiens teknis maupun non-teknis.</li>
+          <li>Berkolaborasi dengan developer, business analyst, QA, dan stakeholder agar dokumentasi akurat dan konsisten.</li>
+          <li>Mereview dan memperbarui dokumentasi secara berkala mengikuti perubahan sistem.</li>
+          <li>Memastikan dokumentasi mematuhi standar perusahaan dan best practice dokumentasi TI.</li>
+          <li>Mendukung komunikasi teknis dengan pihak internal dan eksternal.</li>
+          <li>Berkoordinasi dengan tim developer dan functional/technical untuk perbaikan sistem.</li>
+        </ul>
+      </details>
+    </article>
+    <article class="gl sp job rv">
+      <span class="date">Februari – Juni 2024</span>
+      <h3>Business Analyst (Freelance)</h3>
+      <p class="org">Dinas Perhubungan Jawa Barat</p>
+      <ul>
+        <li>Mengumpulkan dan menganalisis kebutuhan bisnis stakeholder.</li>
+        <li>Menyusun BRD, FRD, SRS, user stories, dan dokumentasi pendukung.</li>
+        <li>Melakukan analisis proses AS-IS dan TO-BE.</li>
+        <li>Menjadi penghubung antara tim bisnis dan tim teknis selama siklus proyek.</li>
+        <li>Mendukung UAT dan change request documentation.</li>
+      </ul>
+    </article>
+    <article class="gl sp job rv">
+      <span class="date">Januari – Agustus 2021</span>
+      <h3>System Analyst Intern</h3>
+      <p class="org">Universitas Nasional Pasim</p>
+      <ul>
+        <li>Menganalisis kebutuhan sistem dan teknis.</li>
+        <li>Menyusun FSD, use case, process flow, dan spesifikasi sistem.</li>
+        <li>Menentukan alur sistem, integrasi, dan aturan sistem, serta berkoordinasi dengan developer dan QA.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="proyek">
+  <div class="rv"><span class="kick">Proyek</span>
+  <h2>Sistem yang pernah <span class="grad">saya tangani</span></h2>
+  <p class="sub">Sepuluh proyek di industri farmasi dan transportasi.</p></div>
+  <div class="pj" id="pj"></div>
+</section>
+
+<section id="skill" class="rv">
+  <span class="kick">Skill</span>
+  <h2>Senjata <span class="grad">andalan</span></h2>
+  <p class="sub">Kemampuan dan alat yang saya pakai setiap hari.</p>
+  <div class="sk" id="sk"></div>
+  <div class="gl edu"><span class="kick">Pendidikan</span><b>S1 Teknik Informatika (S.Kom)</b>Universitas Nasional Pasim · 2017 – 2021</div>
+</section>
+
+<section id="kontak" class="rv">
+  <div class="cta gl">
+    <h2 class="grad">Punya sistem yang perlu didokumentasikan?</h2>
+    <p class="sub" style="margin:0 auto 28px">Yuk ngobrol. Saya di Bandung, terbuka untuk peran Technical Writer, Business Analyst, atau QA.</p>
+    <div class="btns">
+      <a class="btn hot" href="mailto:nurlaelasafitri140@gmail.com">nurlaelasafitri140@gmail.com</a>
+      <a class="btn" href="https://wa.me/6282127394799" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>© 2026 Nurlaela Safitri</footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+document.documentElement.classList.add("js");
+
+/* typewriter */
+const words=["Technical Writer","Business Analyst","Quality Assurance","penerjemah kebutuhan bisnis"],tw=$("#tw");
+let wi=0,ci=0,del=false;
+(function type(){
+  if(rm){tw.textContent=words[0];return}
+  const w=words[wi];ci+=del?-1:1;tw.textContent=w.slice(0,ci);
+  let d=del?35:85;
+  if(!del&&ci===w.length){del=true;d=1500}else if(del&&ci===0){del=false;wi=(wi+1)%words.length;d=300}
+  setTimeout(type,d);
+})();
+
+/* marquee */
+const mw=["BRD","FSD","URS","Use Case","Process Flow","UAT","SOP","User Manual","Test Case","Release Notes"];
+const row=mw.map(w=>"<span>"+w+" ✦</span>").join("");
+$("#marq").innerHTML=row+row+row+row;
+
+/* pipeline */
+const docs=[
+["VP","Validation Plan","Rencana yang menjelaskan ruang lingkup, pendekatan, dan tanggung jawab validasi sebuah sistem."],
+["URS","User Requirement Specification","Daftar kebutuhan pengguna: apa yang harus bisa dilakukan sistem."],
+["FRA","Functional Risk Assessment","Penilaian risiko tiap fungsi sistem untuk menentukan seberapa dalam pengujiannya."],
+["FSD","Functional Specification Document","Uraian bagaimana sistem memenuhi kebutuhan pengguna, dari sisi fungsi dan alur."],
+["SDS","Software Design Specification","Rancangan teknis sistem: komponen, data, dan integrasi."],
+["IQ","Installation Qualification","Bukti bahwa sistem terpasang dengan benar sesuai spesifikasi."],
+["OQ","Operational Qualification","Bukti bahwa setiap fungsi sistem berjalan sesuai spesifikasi lewat test case."],
+["PQ","Performance Qualification","Bukti bahwa sistem bekerja andal pada kondisi penggunaan sehari-hari."],
+["SOP","Standard Operating Procedure","Langkah kerja baku agar proses dijalankan dengan cara yang sama setiap kali."],
+["Manual","User Manual","Panduan bagi pengguna untuk memakai sistem, ditulis dalam bahasa yang mudah dipahami."]];
+const pipe=$("#pipe"),det=$("#det");
+function show(i){
+  $$("#pipe button").forEach((b,j)=>b.setAttribute("aria-pressed",j===i));
+  det.innerHTML='<b class="grad"></b><strong></strong><p></p>';
+  det.children[0].textContent=docs[i][0];det.children[1].textContent=docs[i][1];det.children[2].textContent=docs[i][2];
+}
+docs.forEach((d,i)=>{const b=document.createElement("button");b.type="button";b.textContent=d[0];b.setAttribute("aria-pressed","false");b.onclick=()=>show(i);pipe.appendChild(b)});
+show(1);
+
+/* projects */
+const prj=[
+["Bio Farma",0,"Warehouse Management System (WMS)","Departemen Gudang"],
+["Bio Farma",0,"Track and Trace System","Vaksin"],
+["Bio Farma",0,"Aplikasi Bottle Station","Mesin Rota 4, Departemen Packaging"],
+["Bio Farma",0,"Smart Stock Management System (SSMS)","Departemen Packaging"],
+["Bio Farma",0,"Basket Station Line Packaging 2","Departemen Packaging"],
+["Bio Farma",0,"Workstation Baru Track and Trace","Area Distribusi"],
+["Bio Farma",0,"Integrasi Track and Trace dengan ERP","ERP Biofarma"],
+["Bio Farma",0,"Sistem QR Code untuk WMS","Warehouse Management System"],
+["Kimia Farma",1,"Track and Trace System","Vaksin"],
+["Dishub Jabar",2,"Monitoring dan Integrasi Sistem Transportasi (MONITA)","Dinas Perhubungan Provinsi Jawa Barat"]];
+$("#pj").innerHTML=prj.map((p,i)=>`<article class="gl sp card tilt"><div class="top"><span class="n">${String(i+1).padStart(2,"0")}</span><span class="chip k${p[1]}">${p[0]}</span></div><div><h3>${p[2]}</h3><small>${p[3]}</small></div></article>`).join("");
+
+/* skills */
+const sk=[
+["Dokumentasi","#FF3D81",["VP","URS","FRA","FSD","SDS","IQ","OQ","PQ","SOP","User Manual"]],
+["Analisis dan pengujian","#22D3EE",["Kebutuhan sistem dan bisnis","Pemetaan AS-IS dan TO-BE","Use case","Process flow","Flow diagram","Test Case","Test Script","UAT"]],
+["Tools","#FFB020",["Microsoft Office","Google Workspace","Confluence","Notion","Draw.io","Microsoft Visio","UML","Jira","Trello","Microsoft Project"]],
+["Soft skills","#A78BFA",["Komunikasi tertulis","Analitis dan logis","Teliti","Manajemen waktu","Kolaboratif","Cepat belajar"]]];
+$("#sk").innerHTML=sk.map(g=>`<div><h3>${g[0]}</h3><div class="pills" style="--cl:${g[1]}">${g[2].map(s=>"<span>"+s+"</span>").join("")}</div></div>`).join("");
+
+/* reveal + counters */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+$$(".rv").forEach(el=>io.observe(el));
+const co=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;co.unobserve(e.target);
+  const to=+e.target.dataset.to,t0=performance.now();
+  (function f(t){const k=Math.min((t-t0)/1200,1);e.target.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(t0);
+}),{threshold:.6});
+$$(".num").forEach(el=>{if(rm)el.textContent=el.dataset.to;else co.observe(el)});
+
+/* cursor glow, spotlight, tilt */
+const cur=$("#cur");
+addEventListener("pointermove",e=>{
+  if(!rm&&e.pointerType==="mouse"){cur.style.left=e.clientX+"px";cur.style.top=e.clientY+"px"}
+  const c=e.target.closest&&e.target.closest(".sp");
+  if(c){const r=c.getBoundingClientRect();
+    c.style.setProperty("--mx",e.clientX-r.left+"px");c.style.setProperty("--my",e.clientY-r.top+"px");
+    if(!rm&&e.pointerType==="mouse"&&c.classList.contains("tilt")){
+      const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      c.style.transform=`perspective(800px) rotateX(${-y*9}deg) rotateY(${x*11}deg) translateY(-4px)`}}
+});
+addEventListener("pointerout",e=>{const c=e.target.closest&&e.target.closest(".tilt");if(c&&!c.contains(e.relatedTarget))c.style.transform=""});
+
+/* scroll progress + timeline fill */
+const tl=$("#tl"),bar=$("#bar");
+function onScroll(){
+  bar.style.width=(scrollY/(document.documentElement.scrollHeight-innerHeight)*100)+"%";
+  const r=tl.getBoundingClientRect();
+  tl.style.setProperty("--pg",Math.max(0,Math.min(1,(innerHeight*.6-r.top)/r.height))*100+"%");
+}
+addEventListener("scroll",onScroll,{passive:true});onScroll();
+</script>
+</body>
+</html>
